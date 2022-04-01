@@ -7,7 +7,7 @@ function Navbar() {
       <nav className="navbar navbar-expand navbar-dark bg-dark">
         <div className="container">
           <NavLink className="navbar-brand" to="/">
-            Testing Deployment
+            Tim's website
           </NavLink>
           <div>
             <ul className="navbar-nav ml-auto">
@@ -19,12 +19,17 @@ function Navbar() {
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link" to="/about">
-                  About
+                  About Us
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link" to="/contact">
                   Contact
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/educational">
+                  Educational
                 </NavLink>
               </li>
             </ul>
