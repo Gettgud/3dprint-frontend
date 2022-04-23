@@ -3,6 +3,13 @@ import printer from '../images/printer.png'
 import additive from '../images/additive-subtractive.png'
 import extruder from '../images/extruder.png'
 import types from '../images/printer-types.png'
+import smallp from '../images/smallprinter.png'
+import bigp from '../images/bigprinter.png'
+import filament from '../images/typical-filament.png'
+import pla from '../images/polylactic-acid.png'
+import engraver from '../images/laser-engraver.png'
+import cricut from '../images/cricut-machine.png'
+
 
 function Educational() {
   return (
@@ -45,7 +52,7 @@ function Educational() {
             All other sections stay in powder form and they can be used for the next print. There are many other types too 
             including SLA, Injet, Direct Ink Writing, SDM, and more. </p>
 
-            <img src={types} class="rounded mx-auto d-block" alter="Other types of printers"/>
+            <img src={types} class="rounded mx-auto d-block" alt="Various Methods of 3D Printing"/>
 
             <h2 className="font-weight-light">How much does a 3D printer cost to buy?</h2>
             <p>3D printers in general cost as little as $100 and as much as $1,000,000+. However, anything over $5,000 is 
@@ -53,8 +60,15 @@ function Educational() {
             Most hobbyist printers cost less than $1,000 and can be found on various websites like Amazon, Ebay, Banggood and 
             more.</p>
 
-            <img class="rounded mx-auto d-block" alter="Add cheap vs expensive printer pics"/>
-
+            <div class="row">
+              <div class="col">
+              <img src={smallp} class="rounded mx-auto d-block" alt="Figure 5. Small Hobby Printer (Left)" width="425px"/>
+              </div>
+              <div class="col">
+              <img src={bigp} class="rounded mx-auto d-block" alt="Figure 5. Large Commercial Printer (Right)" width="425px"/>
+              </div>
+            </div>
+                  
             <h2 className="font-weight-light">How much does a 3D printer cost to use?</h2>
             <p>The biggest expense by far goes to material, or more specifically, filament. Filaments typically cost about $20 
             per kilogram or 2.2 lbs. A typical item may be 50 grams, or cost $1 in material. But there also is time in set-up, 
@@ -62,7 +76,7 @@ function Educational() {
             redone, electricity, time and research.   
             </p>
 
-            <img class="rounded mx-auto d-block" alter="Add filament pic"/>
+            <img src={filament} class="rounded mx-auto d-block" alt="Figure 6. Various Colors of 3D Printer Typical Filament"/>
 
             <h2 className="font-weight-light">What is PLA?</h2> 
             <p>PLA or polylactic acid is a vegetable-based plastic material, which commonly uses cornstarch as a raw material. 
@@ -71,8 +85,21 @@ function Educational() {
             natural raw material used in 3D printing. PLA is a fully biodegradable thermoplastic polymer consisting of renewable 
             raw materials. 
             </p>
+            <img src={pla} class="rounded mx-auto d-block" alt="Figure 7. PLA Life Cycle"/>
 
-            <img class="rounded mx-auto d-block" alter="Add PLA pic"/>
+            <h2 className="font-weight-light">What is a Laser Engraver / Laser Cutter?</h2>
+            <p>Unlike 3D printing which is additive manufacturing, laser engraving is subtractive manufacturing. A laser engraver 
+            has a high powered laser that burns away wood material only in X and Y directions. Laser engraving is much faster than 
+            3D printing simply because it only needs to create 1 layer of action rather than multiple. A laser cutter can cut all 
+            the way through the material and sometimes requires multiple slower passes.</p>
+            <img src={engraver} class="rounded mx-auto d-block" alt="Figure 8. Laser Engraver"/>
+
+            <h2 className="font-weight-light">What is a Cricut?</h2>
+            <p>A Cricut is a digital die-cutting machine that is able to cut many different materials for you to use in a plethora 
+            of craft projects. You can cut materials such as paper, vinyl and with the correct cutting blades some Cricut machines 
+            can also cut balsa wood, fabrics, leather and cork.</p>
+            <img src={cricut} class="rounded mx-auto d-block" alt="Figure 9. Cricut Machine Example"/>
+
           </div>
         </div>
       </div>
