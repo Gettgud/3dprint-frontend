@@ -9,7 +9,7 @@ import {
   About,
   Contact,
   Educational,
-} from "./components"; 
+} from "./components";
 
 ReactDOM.render(
   <Router>
@@ -21,6 +21,6 @@ ReactDOM.render(
       <Route path="/educational" element={<Educational />} />
     </Routes>
     <Footer />
-  </Router>, 
+  </Router>,
   document.getElementById("root")
 );
