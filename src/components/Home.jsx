@@ -1,26 +1,24 @@
 import React from "react";
+import Item from "./Item";
+import printer from "../images/printer.png"
+
 
 function Home() {
+
+  var names = [
+    "Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6", "Item 7", "Item 8"
+  ]
+  var items = names.map(itemName => {
+    return <div className="col" key={itemName}>
+          <Item name={itemName} img={printer} itemWidth="250px"/>
+    </div>
+  })
+
   return (
     <div className="home">
       <div className="container">
         <div className="row align-items-center my-5">
-          <div className="col-lg-7">
-            <img
-              className="img-fluid rounded mb-4 mb-lg-0"
-              src="http://placehold.it/900x400"
-              alt=""
-            />
-          </div>
-          <div className="col-lg-5">
-            <h1 className="font-weight-light">Home</h1>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-            </p>
-          </div>
+        {items}
         </div>
       </div>
     </div>
