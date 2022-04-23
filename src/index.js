@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import {
-  Navbar,
+  Navigation,
   Footer,
   Home,
   About,
@@ -13,7 +13,7 @@ import {
 
 ReactDOM.render(
   <Router>
-    <Navbar />
+    <Navigation />
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
