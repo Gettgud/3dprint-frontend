@@ -5,3 +5,5 @@ export { default as About } from "./About";
 export { default as Contact } from "./Contact";
 export { default as Educational } from "./Educational";
 export { default as Item } from "./Item";
+export { default as ItemPage } from "./ItemPage";
+export { default as PaypalBox } from "./PaypalBox";
