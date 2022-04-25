@@ -9,7 +9,9 @@ import {
   About,
   Contact,
   Educational,
-} from "./components"; 
+  ItemPage,
+  PaypalBox,
+} from "./components";
 
 ReactDOM.render(
   <Router>
@@ -19,8 +21,10 @@ ReactDOM.render(
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/educational" element={<Educational />} />
+      <Route path="/:itemId" element={<ItemPage />} />
+      <Route path="/paypal" element={<PaypalBox />} />
     </Routes>
     <Footer />
-  </Router>, 
+  </Router>,
   document.getElementById("root")
 );
