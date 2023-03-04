@@ -5,7 +5,7 @@ function Navigation() {
   return (
     <Navbar collapseOnSelect bg="dark" variant="dark" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="/home">NT Country Creations</Navbar.Brand>
+        <Navbar.Brand href="/">NT Country Creations</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse
           className="justify-content-end"
